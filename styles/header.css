@@ -1,0 +1,22 @@
+
+.container_cabecalho{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: var(--cor-secundaria);
+    
+}
+
+
+h1 {
+    font-family:  "Pacifico", cursive;
+    font-size: 2rem;
+    padding-right: 50rem;
+    color: var(--cor-primaria);
+    border-radius: 1px solid var(--cor-primaria);
+    text-shadow: 2px 2px 1px var(--cor-clara);
+}
+

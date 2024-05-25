@@ -1,0 +1,93 @@
+.container_produtos{
+    display: flex;
+    width: 100%;
+    padding: 2rem;   
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+ul, li{
+    list-style: none;
+}
+
+.container_produtos h2{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+}
+
+.container_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    
+}
+
+
+.lista_product{
+    display: flex;
+    box-sizing: border-box; 
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.3rem;
+    width: 260px;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid var(--cor-terciaria);
+    box-shadow: 3px 3px 15px var(--cor-terciaria);
+    background-color: var(--cor-clara);
+    opacity: 0.9;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container_card_value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.image_products{
+    max-width: 100%;
+}
+
+
+.titulo_products{
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--cor-secundaria);
+}
+
+.price_products{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-principal);
+}
+
+.delete_button{
+    border: 2.5px solid var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+.titulo_cards{
+    text-align: center;
+}   
+
+.logo_car{
+    display: flex;
+    align-self: center;
+    height: 400px;
+    width: 400px;
+}

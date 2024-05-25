@@ -1,0 +1,35 @@
+.container_logo{
+    display: flex;
+    background-color: var(--cor-secundaria);
+    margin-top: 2rem;
+    height: 200px;
+    gap: 2rem;
+    box-shadow: 5px 5px 10px var(--cor-principal);
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+
+}
+
+.nome_logo{
+font-family:  "Pacifico", cursive;
+font-size: 1.8rem;
+color: var(--cor-primaria);
+border-radius: 1px solid var(--cor-primaria);
+text-shadow: 2px 2px 1px var(--cor-clara);
+
+}
+
+.logo_car_big{
+    margin-bottom: 0.2rem; 
+    height: 300px;
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+}
+
+.tel{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--cor-primaria);
+}
