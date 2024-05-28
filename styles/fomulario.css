@@ -52,6 +52,11 @@ input {
       box-sizing: border-box;
       opacity: 0.92;
 }
+
+.picture_input{
+    text-decoration-style: none;
+}
+
   
 .aviso{
     color: var(--cor-escura);

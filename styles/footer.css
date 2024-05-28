@@ -11,22 +11,16 @@
 
 }
 
-.nome_logo{
-font-family:  "Pacifico", cursive;
-font-size: 1.8rem;
-color: var(--cor-primaria);
-border-radius: 1px solid var(--cor-primaria);
-text-shadow: 2px 2px 1px var(--cor-clara);
+.title_contato{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
 
 }
 
-.logo_car_big{
-    margin-bottom: 0.2rem; 
-    height: 300px;
-    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
-}
-
-.tel{
+p{
     font-family: "Poppins", sans-serif;
     font-style: italic;
     font-weight: 400;
