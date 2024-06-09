@@ -1,34 +1,40 @@
 {
   "produtcs": [
     {
-      "name": "Renault 4CV Decovrable Luxe - 1960",
-      "price": "180.000",
-      "imagem": "assets/renault-6621237_640.png",
+      "name": "The Hobbit and the Lord of the Rings: Deluxe",
+      "price": "300,00",
+      "imagem": "assets/box_livroH.jpg",
       "id": "1"
     },
     {
-      "name": "Mercedes-Benz 280SE Cabriolet - 1969",
-      "price": "693.000",
-      "imagem": "assets/mercedes-benz-3032152_640.png",
+      "name": "Estátua Nasgul - The Lord of the Rings",
+      "price": "260,00",
+      "imagem": "assets/Nasgul.png",
       "id": "2"
     },
     {
-      "name": " Cadillac Eldorado - 1959",
-      "price": "200.000",
-      "imagem": "assets/kisspng-cadillac-eldorado-car-cadillac-de-ville-series-cadillac-png-file-5a777e5e1e6da2.5553503415177805741246.png",
+      "name": "Estátua Lurtz - The Lord of the Rings - Premium",
+      "price": "13.000,00",
+      "imagem": "assets/lurtz.png",
       "id": "3"
     },
     {
-      "name": "Opel Kapitaen P2 - 1959-64",
-      "price": "169.000",
-      "imagem": "assets/adam-opel-ag-2957061_640.png",
+      "name": "Gandalf - O Cinzento - The Lord of the Rings",
+      "price": "2.300,00",
+      "imagem": "assets/gandalf.png",
       "id": "4"
     },
     {
-      "name": "Ford Mustang Shelby GT500 - 1967",
-      "price": "500.000",
-      "imagem": "assets/shelby cobra gt500.png",
+      "name": "Espada Decorativa Anduril Narsil",
+      "price": "900,00",
+      "imagem": "assets/espada_anduril.png",
       "id": "5"
+    },
+    {
+      "id": "d719",
+      "name": "Funko Aragorn - Senhor dos Anéis",
+      "price": "139.00",
+      "imagem": "https://m.media-amazon.com/images/I/61bxTQnqRFL.__AC_SX300_SY300_QL70_ML2_.jpg"
     }
   ]
 }

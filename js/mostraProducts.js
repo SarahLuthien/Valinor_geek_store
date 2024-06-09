@@ -5,7 +5,7 @@ const containerProducts = document.querySelector("[data-product]");
 export function constroiCard (name, price, imagem, id){
     const product = document.createElement("li");
     product.className = `lista_product`;
-    product.innerHTML = `  <img class="image_products" src="${imagem}" alt="image_car">
+    product.innerHTML = `  <img class="image_products" src="${imagem}" alt="imagem do produto">
     <h3 class="titulo_products">${name}</h3>
     <div class="container_card_value">
         <p class="price_products">R$ ${price}</p>

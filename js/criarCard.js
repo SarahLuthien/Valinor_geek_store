@@ -17,10 +17,7 @@ async function criarCard(evento) {
         window.location.href = "./envio.concluido.html"
     } catch(error){
         alert(error);
-        // alert.addEventListener("click", evento =>  formulario.value = "");
-        
-        // document.querySelector(".container_formulario").innerHTML = `<h2 class="titulo_erro">${(error)}</h2>`;
-
+    
     }
 
 }

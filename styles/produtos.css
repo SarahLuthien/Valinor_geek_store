@@ -1,11 +1,9 @@
 .container_produtos{
     display: flex;
-    width: 100%;
-    padding: 2rem;   
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    flex: 1;   
 }
 
 ul, li{
@@ -13,38 +11,38 @@ ul, li{
 }
 
 .container_produtos h2{
-    font-family: "Poppins", sans-serif;
+    font-family: "Bilbo", cursive;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-style: normal;
     color: var(--cor-primaria);
+    margin-bottom: 1rem;
 }
 
 .container_card{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem; 
+    justify-content: center;
     
 }
 
 
 .lista_product{
     display: flex;
+    align-items: center;
     box-sizing: border-box; 
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-    padding-left: 0.3rem;
-    width: 260px;
-    gap: 2rem;
+    padding: 10px;
+    max-width: 250px;
+    height: 350px;
+    gap: 0.5rem;
     justify-content: center;
     flex-direction: column;
-    box-sizing: border-box;
-    border: 2px solid var(--cor-terciaria);
+    border: 3px solid var(--cor-principal);
     box-shadow: 3px 3px 15px var(--cor-terciaria);
-    background-color: var(--cor-clara);
-    opacity: 0.9;
+    background-color: var(--cor-secundaria);
     border-radius: 20px;
     text-align: center;
 }
@@ -59,38 +57,63 @@ ul, li{
 
 .image_products{
     max-width: 100%;
+    box-sizing: border-box;  
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--cor-escura);
+    border: 2px solid var(--cor-principal);
 }
 
 
 .titulo_products{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
-    color: var(--cor-secundaria);
+    color: var(--cor-escura);
 }
 
 .price_products{
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 600;
-    color: var(--cor-principal);
+    font-weight: 500;
+    color: var(--cor-escura);
 }
 
 .delete_button{
-    border: 2.5px solid var(--cor-secundaria);
+    border: 2.5px solid var(--cor-clara);
     border-radius: 10px;
 }
+
+.delete_button.ativa,
+.delete_button:active {
+   background-color: var(--cor-clara);
+   border: 2px solid var(--cor-secundaria);
+   box-shadow: 3px 3px 0 var(--cor-principal) inset;
+   outline: none;
+} 
+ 
+.delete_button.focus,
+.delete_button:focus {
+   outline: none;
+   box-shadow: 1px 1px 10px var(--cor-secundaria);
+}
+ 
+ .delete_button.active:focus,
+ .delete_button:active:focus {
+   box-shadow: 0 3px 3px 2px var(--cor-principal)  inset, 1px 1px 10px var(--cor-secundaria);
+ }
+ 
+   
+.delete_button:hover {
+   background-color: var(--cor-clara);
+}
+  
 
 .titulo_cards{
     text-align: center;
 }   
 
-.logo_car{
-    display: flex;
-    align-self: center;
-    height: 400px;
-    width: 400px;
-}
 
 /* Sessão de estilização da pagina de confirmação de envio */
 
@@ -120,4 +143,120 @@ ul, li{
     color: var(--cor-secundaria);
 
 }
+
+@media(width <= 1260px){
+
+    .container_produtos{
+      padding-left: 1.5rem;     
+    }
+    
+    .container_card{
+        gap: 1rem;        
+    }
+
+    .container_produtos h2{
+        font-size: 2.5rem;    
+    }
+
+    .lista_product{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box; 
+        padding: 10px;
+        max-width: 220px;
+        height: 350px;
+    }
+    
+        
+}
+
+@media(width <= 1044px){
+
+    .container_produtos h2{
+        font-size: 2.2rem;
+    }
+
+    .container_card{
+        gap: 1rem;        
+    }
+
+    .lista_product{
+        padding: 10px;
+        max-width: 180px;
+        height: 350px;
+      
+    }
+
+}
+
+@media(width <= 864px){
+
+    .container_produtos{
+        display: flex;
+        gap: 1rem;    
+    }
+
+    .container_produtos h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container_card{
+       justify-content: center;
+        gap: 2rem; 
+        
+    }
+    .lista_product{
+        display: flex;
+        padding: 5px;
+        width: 100%;
+        height: 350px;
+        line-height: 1rem;
+          
+    }
+
+    .image_products{
+        max-width: 90%;
+        box-sizing: border-box;  
+        overflow: hidden;  
+    }
+
+
+  
+
+}
+
+@media(max-width: 430px) {
+
+    .container_produtos{
+        display: flex;
+        padding: 1rem;
+        gap: 1rem;        
+    }
+
+    .container_produtos h2{
+        font-size: 1.9rem;
+        align-items: center;
+    }
+
+    .lista_product{
+        display: flex;
+        padding: 5px;
+        width: 170px;
+        height: 300px;
+        line-height: 1rem;
+          
+    }
+
+    .image_products{
+        max-width: 90%;
+        box-sizing: border-box;  
+        overflow: hidden;  
+    }
+
+    
+
+}
+
+
 

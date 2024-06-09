@@ -1,29 +1,54 @@
-.container_logo{
+.container_footer{
     display: flex;
     background-color: var(--cor-secundaria);
     margin-top: 2rem;
     height: 200px;
-    gap: 2rem;
-    box-shadow: 5px 5px 10px var(--cor-principal);
+    gap: 1rem;
     align-items:center;
     justify-content:center;
     flex-direction: column;
 
 }
 
-.title_contato{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
+
+p{
+    font-family: "Bilbo", cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27px;
     color: var(--cor-primaria);
+}
+
+@media(width <= 1260px){
+    .container_footer{
+        height: 165px;
+    }
+
+    p{
+        font-size: 26px;
+    }
 
 }
 
-p{
-    font-family: "Poppins", sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--cor-primaria);
+
+@media(width <= 864px){
+    .container_footer{
+        height: 160px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+}
+   
+
+@media(width <= 520px) {
+
+    .container_footer{
+        height: 160px;
+    }
+
+    p{
+        font-size: 24px;
+    }
 }

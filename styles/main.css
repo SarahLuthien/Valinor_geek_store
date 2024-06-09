@@ -10,10 +10,9 @@
     } 
     
     :root{
-        --cor-principal: #0a043c;
-        --cor-secundaria: #03506f;
-        --cor-terciaria: #bbbbbb;
-        --cor-clara: #ffe3d8;
+        --cor-principal: #102820;
+        --cor-secundaria: #4c6444;
+        --cor-clara: #caba9c;
         --cor-escura: #000000;
     }
     
@@ -23,7 +22,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 100;
         font-style: normal;
-        background-color: #eef3f8;
+        background-color: #f3ece0;
         line-height: 1;
         color: var(--cor-escura);
         overflow-x: hidden;
@@ -34,6 +33,26 @@
         flex-direction: row;
         padding-bottom: 10rem;
         padding-top: 2rem;
+        gap: 2rem;
+    }
+
+    @media(width <= 864px){
+        
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+            }
+
+    }
+
+    @media(width <= 430px) {
+
+        main{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        }
     }
 
   
