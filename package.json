@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch ./db.json --port 3000"
+    "start": "https://my-json-server.typicode.com/SarahLuthien/valinor-geek-store-api/produtcs"
   },
   "keywords": [],
   "author": "",
