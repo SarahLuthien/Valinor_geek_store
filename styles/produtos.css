@@ -1,9 +1,11 @@
 .container_produtos{
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
     flex-direction: column;
-    flex: 1;   
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    gap: 3rem; 
+    min-height: 60vh; 
+
 }
 
 ul, li{
@@ -20,56 +22,77 @@ ul, li{
     margin-bottom: 1rem;
 }
 
-.container_card{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem; 
-    justify-content: center;
-    
+.card-container {
+    max-width: 1428px;
+    margin: 0 auto;
+}
+
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 25px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    justify-content: center;  
 }
 
 
 .lista_product{
-    display: flex;
-    align-items: center;
-    box-sizing: border-box; 
-    padding: 10px;
+    width: 100%;
     max-width: 250px;
-    height: 350px;
-    gap: 0.5rem;
-    justify-content: center;
-    flex-direction: column;
-    border: 3px solid var(--cor-principal);
-    box-shadow: 3px 3px 15px var(--cor-terciaria);
-    background-color: var(--cor-secundaria);
-    border-radius: 20px;
-    text-align: center;
-}
-
-.container_card_value{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-}
-
-.image_products{
-    max-width: 100%;
-    box-sizing: border-box;  
-    overflow: hidden; 
-    border-radius: 20px;
+    height: 21rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: 1px solid var(--cor-principal);
     box-shadow: 2px 2px 5px var(--cor-escura);
-    border: 2px solid var(--cor-principal);
+    
 }
 
 
+.card-image {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2rem;
+    background-color: var(--cor-escura);
+    overflow: hidden; 
+    margin-bottom: -10px;
+    box-shadow: 2px 2px 10px var(--cor-escura);
+}
+
+.image-product{
+    width: 100%;
+    height: 200px;
+    z-index: 6;
+    position: relative; 
+    object-fit: fill; 
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* transition effect zoom */
+    cursor: pointer;
+}
+
+/* effect zoom */ 
+.card-image:hover .image-product {
+    transform: scale(1.2);
+}
+
+.container_card_data{
+    z-index: 2;
+    position: relative;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: var(--cor-escura);
+    background-color: var(--cor-secundaria);
+    overflow: hidden;
+    height: 190px;
+    
+}
 .titulo_products{
-    margin-top: 0.5rem;
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
+    margin: 0.6rem;
     color: var(--cor-escura);
 }
 
@@ -77,38 +100,41 @@ ul, li{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 0.5rem;
     color: var(--cor-escura);
 }
 
-.delete_button{
-    border: 2.5px solid var(--cor-clara);
-    border-radius: 10px;
+.container_button_delete{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-clara);
+    backface-visibility: hidden;
+
 }
 
-.delete_button.ativa,
-.delete_button:active {
-   background-color: var(--cor-clara);
-   border: 2px solid var(--cor-secundaria);
-   box-shadow: 3px 3px 0 var(--cor-principal) inset;
-   outline: none;
-} 
- 
-.delete_button.focus,
-.delete_button:focus {
-   outline: none;
-   box-shadow: 1px 1px 10px var(--cor-secundaria);
+.delete_button{
+    border: 0.2rem solid var(--cor-principal);
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 0.5rem 1.3rem;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    box-shadow: 1px 1px 5px var(--cor-principal);  
 }
- 
- .delete_button.active:focus,
- .delete_button:active:focus {
-   box-shadow: 0 3px 3px 2px var(--cor-principal)  inset, 1px 1px 10px var(--cor-secundaria);
- }
- 
-   
-.delete_button:hover {
-   background-color: var(--cor-clara);
+
+.delete_button:hover{
+    transform: perspective(3px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    font-weight: 700;
+    border-color: var(--cor-clara);
+    color: var(--cor-principal);
+    box-shadow: 3px 3px 8px var(--cor-escura);
+    opacity: 0.4;  
 }
-  
 
 .titulo_cards{
     text-align: center;
@@ -146,10 +172,6 @@ ul, li{
 
 @media(width <= 1260px){
 
-    .container_produtos{
-      padding-left: 1.5rem;     
-    }
-    
     .container_card{
         gap: 1rem;        
     }
@@ -158,15 +180,7 @@ ul, li{
         font-size: 2.5rem;    
     }
 
-    .lista_product{
-        display: flex;
-        align-items: center;
-        box-sizing: border-box; 
-        padding: 10px;
-        max-width: 220px;
-        height: 350px;
-    }
-    
+ 
         
 }
 
@@ -180,12 +194,7 @@ ul, li{
         gap: 1rem;        
     }
 
-    .lista_product{
-        padding: 10px;
-        max-width: 180px;
-        height: 350px;
-      
-    }
+  
 
 }
 
@@ -200,29 +209,6 @@ ul, li{
         font-size: 2rem;
         text-align: center;
     }
-
-    .container_card{
-       justify-content: center;
-        gap: 2rem; 
-        
-    }
-    .lista_product{
-        display: flex;
-        padding: 5px;
-        width: 100%;
-        height: 350px;
-        line-height: 1rem;
-          
-    }
-
-    .image_products{
-        max-width: 90%;
-        box-sizing: border-box;  
-        overflow: hidden;  
-    }
-
-
-  
 
 }
 
@@ -239,20 +225,6 @@ ul, li{
         align-items: center;
     }
 
-    .lista_product{
-        display: flex;
-        padding: 5px;
-        width: 170px;
-        height: 300px;
-        line-height: 1rem;
-          
-    }
-
-    .image_products{
-        max-width: 90%;
-        box-sizing: border-box;  
-        overflow: hidden;  
-    }
 
     
 

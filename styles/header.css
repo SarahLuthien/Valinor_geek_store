@@ -6,6 +6,7 @@
     align-items: center;
     padding: 2rem;
     gap: 2rem;
+    flex-wrap: nowrap;
     background-color: var(--cor-secundaria); 
     margin-bottom: 3rem;   
 }

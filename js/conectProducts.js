@@ -1,5 +1,8 @@
+const exclusionModal = document.querySelector('[data-exclusion-modal]');
+const exclusionButton = document.querySelector('[data-exclusion-button]');
+
 async function productListApi(){
-    const conexao = await fetch("http://localhost:3000/produtcs"); //fazer a conexao com a API
+    const conexao = await fetch("https://my-json-server.typicode.com/SarahLuthien/valinor-geek-store-api/produtcs"); //fazer a conexao com a API
     const conexaoConvertida = await conexao.json(); //Converte em um objeto JSON
 
     return conexaoConvertida
@@ -7,7 +10,7 @@ async function productListApi(){
 }
 
 async function criarElementoCard(name, price, imagem, id){
-    const conexao = await fetch("http://localhost:3000/produtcs", {
+    const conexao = await fetch("https://my-json-server.typicode.com/SarahLuthien/valinor-geek-store-api/produtcs", {
         method: "POST", 
         headers: {
                 "Content-type": "application/json"
@@ -31,7 +34,7 @@ async function criarElementoCard(name, price, imagem, id){
 
 
 async function deleteCard(id){
-    const conexao = await fetch("http://localhost:3000/produtcs/"+id,{ 
+    const conexao = await fetch("https://my-json-server.typicode.com/SarahLuthien/valinor-geek-store-api/produtcs/"+id,{ 
         method: "DELETE",
         headers: {
                 "Content-type": "application/json"
@@ -41,7 +44,9 @@ async function deleteCard(id){
         if(conexao.ok){
             this.constroiCard(id);
             const conexaoConvertida = conexao.json();
+            handleShowExclusionModal();
             return conexaoConvertida;
+            
            
         }} catch{ 
         if(!conexao.ok){
@@ -49,6 +54,7 @@ async function deleteCard(id){
         }}
     
 }
+
 
 
 
