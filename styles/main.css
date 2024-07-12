@@ -13,8 +13,8 @@
     
     :root{
         --cor-principal: #102820;
-        --cor-secundaria: #4c6444;
-        --cor-clara: #caba9c;
+        --cor-secundaria: #486939;
+        --cor-clara: #FFF9E0;
         --cor-escura: #000000;
         --cor-branco: #ffff;
     }
@@ -22,10 +22,10 @@
     
     body{
         box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 100;
         font-style: normal;
-        background-color: --cor-branco;
+        background-color: var(--cor-branco);
         line-height: 1;
         color: var(--cor-escura);
         overflow-x: hidden;

@@ -1,23 +1,22 @@
 .container_footer{
     display: flex;
-    background-color: var(--cor-secundaria);
-    margin-top: 2rem;
-    height: 200px;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    align-items:center;
-    justify-content:center;
+    background-color: var(--cor-secundaria); 
     flex-direction: column;
 
 }
 
 
 p{
-    font-family: "Bilbo", cursive;
-    font-style: italic;
+    font-family: "Montserrat", sans-serif;;
     font-weight: 500;
-    font-size: 27px;
-    color: var(--cor-primaria);
+    font-size: 16px;
+    color: var(--cor-clara);
 }
+
 
 @media(width <= 1260px){
     .container_footer{
@@ -25,7 +24,7 @@ p{
     }
 
     p{
-        font-size: 26px;
+        font-size: 16px;
     }
 
 }
@@ -33,7 +32,7 @@ p{
 
 @media(width <= 864px){
     .container_footer{
-        height: 160px;
+        height: 16px;
     }
 
     p{
@@ -45,7 +44,7 @@ p{
 @media(width <= 520px) {
 
     .container_footer{
-        height: 160px;
+        height: 14px;
     }
 
     p{

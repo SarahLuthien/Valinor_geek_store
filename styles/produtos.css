@@ -13,18 +13,19 @@ ul, li{
 }
 
 .container_produtos h2{
-    font-family: "Bilbo", cursive;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 2.8rem;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 500;
     font-style: normal;
     color: var(--cor-primaria);
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .subtitulo_envio{
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .card-container {
@@ -45,10 +46,9 @@ ul, li{
 .lista_product{
     width: 100%;
     max-width: 250px;
-    height: 21rem;
-    border-radius: 1.25rem;
+    height: 22rem;
+    border-radius: 2rem;
     overflow: hidden;
-    border: 1px solid var(--cor-principal);
     box-shadow: 2px 2px 5px var(--cor-escura);
     
 }
@@ -87,58 +87,52 @@ ul, li{
     position: relative;
     padding: 1rem 0.5rem;
     text-align: center;
-    color: var(--cor-escura);
     background-color: var(--cor-secundaria);
     overflow: hidden;
-    height: 190px;
+    height: 290px;
     
 }
 .titulo_products{
-    font-size: 16px;
-    font-weight: 500;
-    font-style: italic;
-    margin: 0.6rem;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0.8rem 0.6rem;
     color: var(--cor-escura);
 }
 
 .price_products{
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
     color: var(--cor-escura);
 }
 
 .container_button_delete{
     display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
     text-align: center;
     text-decoration: none;
-    color: var(--cor-clara);
+    color: var(--cor-escura);
     backface-visibility: hidden;
-
 }
 
 .delete_button{
-    border: 0.2rem solid var(--cor-principal);
-    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--cor-principal);
     border-radius: 20px;
     padding: 0.5rem 1.3rem;
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-    box-shadow: 1px 1px 5px var(--cor-principal);  
+    transition: transform 0.6s cubic-bezier(0.299, 0, 0.09, 0.95);
+    box-shadow: inset 2px 2px 9px 1px var(--cor-escura); 
+    
 }
 
 .delete_button:hover{
     transform: perspective(3px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
-    font-weight: 700;
-    border-color: var(--cor-clara);
-    color: var(--cor-principal);
-    box-shadow: 3px 3px 8px var(--cor-escura);
-    opacity: 0.4;  
+    border-color: var(--cor-escura);
+    color: var(--cor-escura);
+    box-shadow: inset 1px 1px 3px var(--cor-escura); 
+    opacity: 0.8;  
 }
 
 .titulo_cards{
@@ -182,7 +176,7 @@ ul, li{
     }
 
     .container_produtos h2{
-        font-size: 2.5rem;    
+        font-size: 32px;    
     }
 
  
@@ -192,7 +186,7 @@ ul, li{
 @media(width <= 1044px){
 
     .container_produtos h2{
-        font-size: 2.2rem;
+        font-size: 30px;
     }
 
     .container_card{
@@ -211,7 +205,7 @@ ul, li{
     }
 
     .container_produtos h2{
-        font-size: 2rem;
+        font-size: 29px;
         text-align: center;
     }
 
@@ -226,7 +220,7 @@ ul, li{
     }
 
     .container_produtos h2{
-        font-size: 1.9rem;
+        font-size: 25px;
         align-items: center;
     }
 

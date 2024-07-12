@@ -9,14 +9,15 @@
 }
 
 .container_formulario h2{
-    font-family: "Bilbo", cursive;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 2.8rem;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 500;
     font-style: normal;
-    color: var(--cor-primaria);
+    color: var(--cor-escura);
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 5rem;
 }
   
 .container_form{
@@ -30,7 +31,6 @@
     background-repeat: no-repeat;
     background-color: var(--cor-secundaria);   
     background-size: 200px; 
-    border: 3px solid var(--cor-principal);
     align-items: center;
     flex-direction: column;
     padding: 1rem;
@@ -116,7 +116,7 @@ input {
 @media(width <= 1260px){
 
     .container_formulario h2{
-    font-size: 2.5rem;   
+    font-size: 32px;   
     }
 
     .container_form{
@@ -128,7 +128,7 @@ input {
 @media(width <= 1044px){
 
     .container_formulario h2{
-        font-size: 2.2rem;
+        font-size: 30px;
 
     }
     .container_form{
@@ -147,7 +147,7 @@ input {
     
 
     .container_formulario h2{
-        font-size: 2.2rem;
+        font-size: 29px;
     
     }
 
@@ -165,7 +165,7 @@ input {
     }
 
     .container_formulario h2{
-        font-size: 1.9rem;
+        font-size: 25px;
     
     }
 
