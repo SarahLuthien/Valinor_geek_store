@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "https://my-json-server.typicode.com/SarahLuthien/valinor-geek-store-api/products"
+    "start": "https://6690791ac0a7969efd9c2716.mockapi.io/products"
   },
   "keywords": [],
   "author": "",

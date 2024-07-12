@@ -22,6 +22,11 @@ ul, li{
     margin-bottom: 1rem;
 }
 
+.subtitulo_envio{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
 .card-container {
     max-width: 1428px;
     margin: 0 auto;
