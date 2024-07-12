@@ -9,7 +9,7 @@
 <div>
   <br>
   <p>Emblema recebido após a conclusão do projeto:</p>
- <img src="">
+ <img src="https://i.postimg.cc/MGDBdTSV/Badge-Alura-Geek.png">
 </div>
 
 <h2>:rocket: Tecnologias:</h2>
