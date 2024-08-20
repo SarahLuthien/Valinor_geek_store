@@ -39,6 +39,20 @@
         gap: 2rem;
     }
 
+     /* Estilização da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--cor-secundaria);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor-principal);
+  }
+
+
     @media(width <= 864px){
         
         main{
